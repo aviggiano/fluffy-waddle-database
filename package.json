@@ -1,6 +1,6 @@
 {
   "name": "fluffy-waddle-database",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Zero-config smart contract vulnerability detection system",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",
@@ -17,6 +17,7 @@
     "typeorm": "^0.3.10"
   },
   "devDependencies": {
+    "@types/node": "^18.11.3",
     "typescript": "^4.8.4"
   }
 }
