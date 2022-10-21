@@ -17,6 +17,7 @@
     "skipLibCheck": true,
     "rootDir": ".",
     "module": "commonjs",
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },

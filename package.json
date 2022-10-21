@@ -1,8 +1,9 @@
 {
   "name": "fluffy-waddle-database",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Zero-config smart contract vulnerability detection system",
-  "main": "index.ts",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:aviggiano/fluffy-waddle-database.git",
   "author": "Antonio Guilherme Ferreira Viggiano <agfviggiano@gmail.com>",
   "license": "MIT",
