@@ -2,11 +2,10 @@
   "compilerOptions": {
     "incremental": true,
     "target": "es5",
-    "module": "es2022",
+    "module": "CommonJS",
     "declaration": true,
     "outDir": "dist",
     "esModuleInterop": true,
-    "moduleResolution": "Node",
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true
   },
