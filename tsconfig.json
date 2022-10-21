@@ -21,12 +21,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "include": ["**/*.ts"],
+  "include": ["src"],
   "exclude": [
-    "node_modules/**/*",
-    ".webpack/**/*",
-    "_warmup/**/*",
-    ".vscode/**/*"
+    "node_modules",
+    "dist"
   ],
   "ts-node": {
     "require": ["tsconfig-paths/register"]
