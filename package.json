@@ -1,6 +1,6 @@
 {
   "name": "fluffy-waddle-database",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Zero-config smart contract vulnerability detection system",
   "main": "index.ts",
   "repository": "git@github.com:aviggiano/fluffy-waddle-database.git",
