@@ -1,13 +1,13 @@
 import "reflect-metadata";
 import dotenv from "dotenv";
 dotenv.config();
-import database, { Blockchain, connect, disconnect } from ".";
+import database, { Auditor, Blockchain, connect, disconnect } from ".";
 
 import { Logger } from "tslog";
 
 const log = new Logger();
 
-async function seed(): Promise<void> {
+async function blockchains(): Promise<void> {
   log.info("seed start");
   await connect();
   await database.synchronize();
@@ -34,4 +34,20 @@ async function seed(): Promise<void> {
   await disconnect();
 }
 
-seed();
+async function auditors(): Promise<void> {
+  log.info("seed start");
+  await connect();
+  await database.synchronize();
+  const auditors: Omit<Auditor, "id" | "createdAt" | "updatedAt">[] = [
+    {
+      name: "Code4rena",
+    },
+    {
+      name: "Sherlock",
+    },
+  ];
+  log.info(`create ${auditors.length} auditors`);
+  await database.manager.insert(Auditor, auditors);
+  log.info("seed done");
+  await disconnect();
+}
