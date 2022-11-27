@@ -24,6 +24,9 @@ export class Audit {
   @Index()
   auditorId: Auditor["id"];
 
+  @Column()
+  name: string;
+
   @CreateDateColumn()
   createdAt: Date;
   @UpdateDateColumn()
